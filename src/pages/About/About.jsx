@@ -15,7 +15,6 @@ import UpIcon from '../../components/Up/UpIcon.jsx';
 const About = () => {
   const renderBlogCards = () => {
     const firstThreeBlogs = blog.slice(0, 3);
-
     return (
       <div className="row">
         {firstThreeBlogs.map((post, index) => (

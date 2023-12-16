@@ -7,6 +7,7 @@ import Blog from './pages/Blog/Blog';
 import Header from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
 import Shop from './pages/Shop/Shop'
+import SingleBlog from './pages/SingleBlog/SingleBlog';
 
 
 
@@ -23,7 +24,7 @@ function App() {
   <Route path='/blog' element={<Blog/>}/>
   <Route path='/shop' element={<Shop/>}/>
   <Route path='*' element={<Error/>}/>
-
+  <Route path='/singleblog/:id' element={<SingleBlog/>}/>
 
   
 </Routes>

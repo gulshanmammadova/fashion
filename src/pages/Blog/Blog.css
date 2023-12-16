@@ -1,0 +1,25 @@
+.blog-card-title{
+    font-size: 14px;
+    color: rgb(92, 163, 163) !important;
+    
+}
+.detail-blog{
+    color: rgb(92, 163, 163) !important;
+font-weight: bold;
+text-decoration: none;
+}
+.card-1{
+    height: 345px !important;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.b-0{
+    border-radius: 0;
+} 
+.blog-cards-all .card-body{
+display: block;
+font-size: 18px;
+font-weight: 400;
+color: #000;
+}

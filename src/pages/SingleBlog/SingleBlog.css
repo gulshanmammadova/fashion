@@ -1,0 +1,225 @@
+
+.single-blog{
+    width: 67%;
+    margin: 8rem auto;
+
+}
+.single-blog .blog-photo{
+        display: flex;
+        justify-content: center;
+}
+.single-blog .blog-photo img{
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.15);
+}
+.single-blog .blog-setting-info {
+    margin:2rem auto;
+}
+.single-blog .blog-setting-info .blog-creater-info{
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    
+}
+.single-blog .blog-setting-info img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.blog-setting-info hr{
+    margin: 1.5rem 0;
+    color: inherit;
+    border-top: 1px solid;
+    opacity: 0.25;
+}
+.single-blog .blog-setting-info .blog-creater-info h5{
+    margin: 1rem;
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.single-blog .blog-setting-info .created-day, .comment-count{
+    color: rgb(92, 163, 163) !important;
+    padding: 3rem auto;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.blog-text h2{
+    font-family: "Poppins", Sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.blog-text p{
+    margin: 1rem auto;
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+.next-prev-blog  .previous{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.next-prev-blog  .previous i, .next i{
+    color: #1B262C;
+    font-size: 30px;
+}
+.previous .prev-blog-info p:nth-child(1){
+    padding: 0 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    margin: 3px auto;
+    font-weight: 800;
+
+}
+.previous .prev-blog-info p:nth-child(2){
+    color: #2f78a7;
+
+}
+.next .next-blog-info p:nth-child(1){
+    padding: 0 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    text-align: end;
+    margin: 3px auto;
+    font-weight: 800;
+
+}
+.next .next-blog-info p:nth-child(2){
+    color: #2f78a7;
+
+}
+.next-prev-blog .next{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.next-prev-blog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comment{
+    margin: 2rem auto;
+}
+.comment h2{
+    color: rgb(92, 163, 163) !important;
+
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+
+}
+.comment p{
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 1rem 0;
+}
+.comment .comment-form-group .form-group label{
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.form-control:focus{
+    /* outline: none; */
+    box-shadow: 0 0 1px #6E6E6E;
+    border-color: rgb(92, 163, 163) !important;
+}
+.comment .comment-form-group button{
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    background-color:rgb(92, 163, 163) !important;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color:rgb(92, 163, 163) !important;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 30px 15px 30px;
+    transition: 0.5s;
+}
+.blog-comment{
+   margin: 10px 0 ;
+}
+.commentor-settings{
+    color: rgb(92, 163, 163) !important;
+}
+.comment .comment-form-group button:hover{
+    background-color: #FFFFFF !important;
+    color: rgb(92, 163, 163) !important;
+    border-color:rgb(92, 163, 163) !important;
+}
+.comment .comment-form-group .form-check {
+    padding:1.5rem 1.5rem ;
+}
+
+/* previous next bloga getmek olmur */
+@media only screen and (max-width: 576px) 
+{
+    .blog-bread-crump{
+        width: 50%;
+    }
+   .single-blog{
+    width: 91%;
+   }
+   .blog-text h2{
+    font-size: 27px;
+   }
+   .blog-text p{
+    font-size: 17px;
+   }
+   .next-prev-blog p{
+    font-size: 17px;
+   }
+   .comment p{
+    font-size: 16px;
+   }
+   .blog-text h2{
+    font-size: 21px;
+   }
+   .big-text h3{
+    font-size: 22px !important;
+   }
+   .blog-big-description{
+    font-size: 17px;
+   }
+   p.text{
+    font-size: 16px;
+   }
+   .w-25{
+    margin: 10px auto !important;
+   }
+   .next-blog-info{
+    text-align: end;
+   }
+   .comment h2{
+    font-size: 43.4px;
+   }
+   .form-group{
+    padding:14px 0 ;
+   }
+  .comment .form-check{
+    padding-bottom: 3rem;
+   }
+   
+}

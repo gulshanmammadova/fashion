@@ -9,7 +9,24 @@ let blogs=[
         additionalTitle:'You know that computers are being applied in all spheres of society',
         mainDesc:['Fashion has always been so temporary and uncertain. You can’t keep up with it. This social phenomenon is very whimsical, thus we as the consumers always try to stay in touch with all the latest fashion tendencies. Obviously there is nothing wrong about it because fashion satisfies our willingness to be attractive. And also fashion is the detector of prosperity and social rank.But nowadays fashion is not such unavailable as it was a couple of centuries ago.','The main reason of buying our clothes is the unique combination of fair price, extraordinary style and perfect quality. Here you can find garments of all sizes, colors, styles and fabrics. It will suit you best of all. Because we all live in the time of total consuming of uncountable goods and services, and this has become the main reason for the rapid growth of a so-called culture of consumption in our society.','Our good was made up by best experts with the help of most advanced technologies, and it gives us right to consider this product to be a premium one. Fashion has always been so temporary and uncertain. You can’t keep up with it.'],
         aboutCategory:['Men’s clothing','Women’s clothing','Teens clothing','Children\'s clothing','Hats & Caps'],
-        tags:['Accessories','Casual',' Clothes']
+        tags:['Accessories','Casual',' Clothes'],
+        comments:[
+            {
+                commentId:1,
+                commenter:'BILL',
+                commenDate:'MAY 09, 2018',
+                commentTeaxt:'Guys, you rock! Made a purchase at your store recently. The order has been shipped and delivered on time. The quality is superb! The price is quite reasonable. Told all my friends about your excellent service and the variety of choice. I think I’ll be your loyal customer in future as well. I wish your store many more years of prosperity.'
+
+            },
+            {
+                commentId:2,
+                commenter:'Bill Gates',
+                commenDate:'MAY 09, 2018',
+                commentTeaxt:'Having the distressing experience with some online shops before decided to say ‘’THANK YOU” to all personnel of this store. You are not only friendly, but deliver really good products in the shortest possible terms. In a word, I am absolutely happy with my purchase and the service. Everything was perfect.'
+
+            }
+
+        ]
     },
     {
         id:2,
