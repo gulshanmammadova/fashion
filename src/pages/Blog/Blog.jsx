@@ -8,7 +8,10 @@ import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom'
 import './Blog.css'
 const Blog = () => {
-  console.log(datas)
+  datas.forEach(element => {
+      console.log(element.tags)
+      
+    });
   return (
 
     <div className='container'>
@@ -30,7 +33,9 @@ const Blog = () => {
         })
 }
       </div>
-      <div className='filter col-lg-2'></div>
+      <div className='filter col-lg-2'>
+
+      </div>
 
       </div>
     </div>
