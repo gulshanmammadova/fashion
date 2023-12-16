@@ -34,28 +34,27 @@ const Blog = () => {
   };
 
   const tagHandle = (tag) => {
-   
-    let filterByName = datas.filter(
+    const filterByName = datas.filter(
       n => n.title.trim().toLowerCase().includes(inp.trim().toLowerCase())
     );
-
-    if (searchByNames.length > 0 && searchByTags.length > 0 ) {
-      let filteredResults = searchByNames.filter(blog =>
-        blog.tags.includes(tag));
-        console.log(filterByName.filter(blog =>blog.tags.includes(tag)));
-       setSearchByNames(filteredResults);
-    } 
-    else if (searchByNames.length > 0) {
+  
+    if (inp.trim().length === 0 && searchByTags.length > 0) {
+      const filteredResults = datas.filter(blog =>
+        blog.tags.includes(tag)
+      );
+      setSearchByNames(filteredResults);
+    } else if (searchByNames.length > 0 && searchByTags.length > 0 && inp.trim().toLowerCase()) {
+      const filteredResults = searchByNames.filter(blog =>
+        blog.tags.includes(tag)
+      );
+      setSearchByNames(filteredResults);
+    } else if (searchByNames.length > 0) {
       setSearchByNames(filterByName);
-    } 
-    else if (searchByTags.length > 0) {
+    } else if (searchByTags.length > 0) {
       setSearchByNames(searchByTags);
+    } else {
+      setSearchByNames(datas);
     }
-     else {
-      setSearchByNames(datas); 
-        }
-        // console.log(filterByName);
-        
   };
 
  
