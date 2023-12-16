@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'MyFonts'; /* Fontunuzun adı */
+    src: url('../../fonts/Roboto_Serif/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf') format('ttf');
+     font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'MyFonts';
+}
+.about1,
+.about2{
+justify-content: space-between;
+align-items: center;
+margin: 2rem 0;
+}
+.about-all-page{
+    align-items: center;
+}
+.card{
+    height: 430px !important;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-body{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.main-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.little-desc{
+    font-size: 19px;
+    font-weight: 600;
+}
+.blog-link{
+    color: #72bc98;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.w-100{
+    width: 109%;
+}
+.blog-link:hover{
+    color: black;
+}
+
+.mini-blog,
+.about2{
+    margin: 3rem 0;
+}

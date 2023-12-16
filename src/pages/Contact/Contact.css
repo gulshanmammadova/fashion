@@ -1,0 +1,63 @@
+.my-container {
+  margin: 50px auto !important;
+}
+.contact-fullName{
+    background-color: aqua;
+    color: black;
+  }
+  .contact-fullName div h2{
+    padding: 90px 0;
+    margin: 13px auto;
+    width: 13%;
+  }
+  .contact-fullName div{
+    background-color: #f3f3f3;
+  }
+  .App{
+    margin: 0 70px;
+  }
+  .d h4{
+    font-size: 32px;
+    color: #383838;
+  }
+  .x h4{
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .d p{
+    width: 88%;
+  }
+
+  .icon{
+    margin-bottom: 0px;
+    font-size: 38px;
+  }
+  .iconsp{
+    /* margin-bottom: 14px; */
+  }
+  .iconsp h6{
+    font-size: 18px;
+    margin: 11px 0 -1px 0;
+  }
+.iconsp p{
+    font-size: 14px;
+}
+form{
+  border: none;
+}
+button.btn{
+  color: white;
+  background-color: #6fcfb8;
+  border-radius: 0;
+  font-weight: bold;
+  transition: .5s;
+}
+button.btn:hover{
+  color: #6fcfb8;
+  background-color: white;
+  border: 1px solid #6fcfb8;
+}
+input,
+textarea{
+ border:1px solid  #dcdcdc;
+}

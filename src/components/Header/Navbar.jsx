@@ -74,7 +74,7 @@ function NavBar() {
               </NavLink>
             </li>
           </ul>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? "nav-menu active nav-menu2" : "nav-menu2 nav-menu"}>
             <li className="icon1 icon">
             <CiUser/>
             

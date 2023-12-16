@@ -1,0 +1,13 @@
+.up-chevron-icon{
+    color: white;
+    background-color: aquamarine;
+    font-weight: bold;
+    padding: 4px 6px;
+    font-size: 39px;
+    position: fixed;
+    right: 28px;
+    bottom: 0;
+    transition: 0.3s;
+    
+    border-radius: 51%;
+}
