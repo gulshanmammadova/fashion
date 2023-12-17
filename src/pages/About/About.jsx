@@ -24,7 +24,7 @@ const About = () => {
               <Card.Body className='card-body'>
                 <Card.Title>{post.title}</Card.Title>
                 <Card.Text>{post.date}</Card.Text>
-                <Link to={`/blog/${post.id}`} className="blog-link">
+                <Link to={`/singleblog/${post.id}`} className="blog-link">
                   Read More
                 </Link>
               </Card.Body>

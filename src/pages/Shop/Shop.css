@@ -1,0 +1,33 @@
+.card-product-img{
+    margin: 2px auto;
+    text-align: center;
+    object-fit: fill;
+    width: 180px;
+    position: relative;
+    height: 236px;
+}
+.card-1{
+    height: 24rem !important;
+}
+.blog-card-title{
+    position: relative;
+}
+.card-1 span{
+    position: absolute;
+}
+.card-icons{
+    display: flex;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: space-between;
+    position: absolute;
+}
+.card-icons .i{
+    background-color: rgb(140, 212, 212) !important;
+margin: 0 4px;
+color: white;
+padding: 2px 4px;
+padding: 5px 8px;
+    font-size: 32px;
+}
