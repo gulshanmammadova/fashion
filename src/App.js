@@ -8,7 +8,7 @@ import Header from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
 import Shop from './pages/Shop/Shop'
 import SingleBlog from './pages/SingleBlog/SingleBlog';
-
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 
 
 
@@ -25,6 +25,8 @@ function App() {
   <Route path='/shop' element={<Shop/>}/>
   <Route path='*' element={<Error/>}/>
   <Route path='/singleblog/:id' element={<SingleBlog/>}/>
+  
+  <Route path='/proddetail/:id' element={<ProductDetail/>}/>
 
   
 </Routes>

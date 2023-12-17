@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#custCarousel .carousel-indicators {
+position: static;
+margin-top:20px;
+}
+
+#custCarousel .carousel-indicators > li {
+width:100px;
+}
+
+#custCarousel .carousel-indicators li img {
+display: block;
+opacity: 0.5;
+}
+
+#custCarousel .carousel-indicators li.active img {
+opacity: 1;
+}
+
+#custCarousel .carousel-indicators li:hover img {
+opacity: 0.75;
+}
+
+.carousel-item img{
+
+width:80%;
+}
+input.count
+{
+    width: 9%;
+    padding: 10px;
+    margin: 3px 13px 7px 0px;
+}.shop-page-info{
+  background-image:url("https://sebrae.com.br/Sebrae/Portal%20Sebrae/Conte%C3%BAdos/Moda/Imagens%20Moda/Retomada%20Segura%20das%20Atividades_%20Setor%20de%20Moda.png");
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+.shop-page-info::after{
+  position: absolute;
+  content: ' ';
+  top: 0;bottom: 0;right: 0;left: 0;
+  background-color: black;
+  opacity: 0.7;
+  
+}
+.shop-bread-crump{
+  width: 30%;
+  padding: 7rem 1.5rem 0;
+  text-align: center;
+  position: sticky;
+  z-index:999;
+}
+.shop-bread-crump a{
+  color: #2f78a7;
+
+}
+.shop-page-info h1{
+ font-weight: bold;
+ font-size: 65px;
+ width: 45%;
+  margin: 0 auto;
+  padding: 0 0 7rem 0rem;
+  position: sticky;
+  z-index:999;
+}
+.breadcrumb{
+      background-color: white;
+    margin: 2rem auto 8px;
+}
+
+/*  QUICK VIEW STYLE  */
+.quick-view{
+    display: flex; 
+    justify-content: space-between;
+        margin: 4rem auto;
+}
+
+
+.quick-view-info{
+  width: 48%;
+      padding-left: 7px;
+  position: relative;
+  z-index: 1000000;
+}
+a{
+    color: #72bc98;
+}
+.quick-view-info  h2{
+    color: #72bc98;
+  font-family: "Poppins", Sans-serif;
+  color: #72bc98;
+  font-family: "Poppins", Sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+}
+.quick-view-info p{
+    line-height: 1.5em;
+  color: #6E6E6E;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 2rem auto;
+}
+
+.quick-view-info .add-to-cart{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  background-color: #72bc98;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+  border-width: 2px 2px 2px 2px;
+  border: solid;
+  border-color: #72bc98;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+}
+.quick-view-info .add-to-cart:hover{
+  color: #72bc98;
+  background-color: white;
+  border-color: #72bc98;
+}
+.quick-view-info .discounted-price{
+    color: #72bc98;
+    font-weight: bold;
+     font-family: "Poppins", Sans-serif;
+     font-size: 29px;
+     text-decoration: underline;
+}
+.quick-view del{
+    color: #6E6E6E;
+    font-size: 20px;
+
+}
+.quick-view p:last-child{
+      font-weight: 700;
+          color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+}
+.quick-view a:last-child{
+  font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #3282BF;
+}
+.quick-view-img{
+  max-width: 650px;
+  max-height: 650px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.quick-view-img img{
+  width: 100%;
+}
+.related-products-cart {
+  margin: 4rem auto;
+}
+.related-info h2{
+
+  color: #72bc98 !important;
+  padding: 0.5em 0;
+  margin: 0;
+  color: #72bc98;
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+}
+.related-card{
+  display: flex;
+  justify-content: space-between;
+}
+.related-card .card{
+width: 22%;
+height: 31rem;
+}
+#description-review ul li a{
+    line-height: 1;
+    
+  padding: 2px 3px;
+        font-weight: 700;
+        color: #6E6E6E;
+            font-family: "Poppins", Sans-serif;
+}
+#description-review .active{
+  
+    padding: 4px 12px;
+  background-color: #eeeeee;
+  border:#6E6E6E;
+  border-radius:  5px 5px 0 0;
+}
+.tab-pane h2{
+  color: #72bc98;
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+  padding: 18px 0px 18px 3px;
+}
+#description-review .container{
+  margin: 4rem auto;
+}
+.tab-pane p{
+  line-height: 1.5em;
+  color: #6E6E6E;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #EEEEEE;
+  padding : 5px 15px;
+}
+.rate i{
+  color: #0F4C75;
+}
+.review-form label{
+  line-height: 1.5em;
+  color: #6E6E6E;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.review-form button{
+  color: #6E6E6E;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px 5px;
+  border-color: #fff;
+  box-shadow: none;
+  margin: 2rem 0 1rem -2rem;
+
+}
+
+@media (max-width: 576px) {
+  .shop-bread-crump{
+    width: 33%;
+  }
+.quick-view{
+  display: block;
+}
+.quick-view-info{
+  width: 100%;
+}
+.quick-view-info h2{
+  font-size: 41px;
+
+}
+.clearfix h2{
+  font-size: 32px;
+}
+.tab-pane p{
+  font-size: 17px;
+}
+.related-info h2
+{
+  font-size: 32px;
+}
+.related-card{
+  display: block;
+}
+.related-card .card {
+  width: 95%;
+  height: 41rem;
+}
+}
+

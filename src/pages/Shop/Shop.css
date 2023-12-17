@@ -6,19 +6,25 @@
     position: relative;
     height: 236px;
 }
+.card-1:hover .card-icons{
+bottom: 200px;
+opacity: 1;
+}
 .card-1{
     height: 24rem !important;
 }
 .blog-card-title{
     position: relative;
 }
-.card-1 span{
+/* .card-1 span{
     position: absolute;
-}
+} */
 .card-icons{
     display: flex;
-    bottom: 10px;
+    bottom: 103px;
     left: 50%;
+transition: 0.3s;
+opacity: 0;
     transform: translate(-50%);
     justify-content: space-between;
     position: absolute;
@@ -28,6 +34,16 @@
 margin: 0 4px;
 color: white;
 padding: 2px 4px;
+font-weight: bold;
 padding: 5px 8px;
     font-size: 32px;
+    transition: 0.3s;
+}
+.all-shop-f{
+    justify-content: space-between;
+}
+.card-icons .i:hover{
+   color: rgb(140, 212, 212) !important;
+background-color: white !important;
+border: 1px solid rgb(140, 212, 212) !important;
 }
