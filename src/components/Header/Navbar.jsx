@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink ,Link} from "react-router-dom";
 import "./NavBar.css";
 import {  HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 import CodeIcon from '../../images/logo/logo.png'
 import { CiUser } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
+import {useCart} from 'react-use-cart'
+import { IoMdHeartEmpty } from "react-icons/io";
 function NavBar() {
   const [click, setClick] = useState(false);
-
+  const {   
+    totalUniqueItems
+  } = useCart();
   const handleClick = () => setClick(!click);
   return (
     <>
@@ -75,6 +79,12 @@ function NavBar() {
             </li>
           </ul>
           <ul className={click ? "nav-menu active nav-menu2" : "nav-menu2 nav-menu"}>
+
+            <li className="icon icon1">
+              <Link to='/wishlist'>
+              <IoMdHeartEmpty/>
+              </Link>
+            </li>
             <li className="icon1 icon">
             <CiUser/>
             
@@ -85,8 +95,11 @@ function NavBar() {
             </ul>
             </li>
             <li className="icon2 icon">
-         <CiShoppingBasket className="card-basket" />
-         <span className="count-cart">0</span>
+              <Link to='/basket'>
+              <CiShoppingBasket className="card-basket" />
+         <span className="count-cart">{totalUniqueItems}</span>
+              </Link>
+ 
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>

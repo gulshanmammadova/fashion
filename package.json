@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
     "react-use-cart": "^1.13.0",
+    "react-use-wishlist": "^1.0.1",
     "reactstrap": "^9.2.1",
     "web-vitals": "^2.1.4"
   },

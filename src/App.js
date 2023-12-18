@@ -9,6 +9,11 @@ import Footer from './components/Footer/Footer';
 import Shop from './pages/Shop/Shop'
 import SingleBlog from './pages/SingleBlog/SingleBlog';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
+import Basket from './pages/Basket/Basket';
+import { CartProvider } from "react-use-cart";
+import { WishlistProvider } from "react-use-wishlist";
+import WishList from './pages/WishList/WishList';
+
 
 
 
@@ -16,6 +21,8 @@ import ProductDetail from './pages/ProductDetail/ProductDetail';
 function App() {
   return (
     <div className="">
+      <CartProvider>
+      <WishlistProvider>
     <Header/>
 <Routes>
   <Route path='/' element={<HomePage/>}/>
@@ -27,10 +34,16 @@ function App() {
   <Route path='/singleblog/:id' element={<SingleBlog/>}/>
   
   <Route path='/proddetail/:id' element={<ProductDetail/>}/>
+  <Route path='/basket' element={<Basket/>}/>
+  <Route path='/wishlist' element={<WishList/>}/>
+
+
 
   
 </Routes>
 <Footer/>
+</WishlistProvider>
+</CartProvider>
     </div>
   );
 }

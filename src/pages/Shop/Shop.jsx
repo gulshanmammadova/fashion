@@ -9,11 +9,13 @@ import { SlBasket } from "react-icons/sl";
 import { BsInfoLg } from "react-icons/bs";
 import './Shop.css';
 import Accordion from 'react-bootstrap/Accordion';
-import { useCart } from "react-use-cart";
+import { CartProvider, useCart } from "react-use-cart";
+import { WishlistProvider, useWishlist } from "react-use-wishlist";
 const Shop = () => {
   const [prod, setProd] = useState([])
-  const { handleClick } = useCart();
-
+  const { addItem } = useCart();
+  const { addWishlistItem } = useWishlist();
+  const { inWishlist } = useWishlist();
   const [colors, setColors] = useState([])
 
   useEffect(() => {
@@ -103,8 +105,8 @@ const Shop = () => {
     <Card className='mx-2 my-2 b-0 card-1' style={{ width: 220 }} key={index}>
       <Card.Img className='b-0 card-product-img' variant="top" src={`https://${product.imageUrl}`} />
       <div className='card-icons'>
-              <TiHeartOutline className='i'/>
-              <SlBasket className='i' onClick={()=>{handleClick(product)}}/>
+              <TiHeartOutline className='i' onClick={()=>{inWishlist(product.id)? alert('Elave edilib !!!'):addWishlistItem(product)}}/>
+              <SlBasket className='i' onClick={()=>{addItem(product)}}/>
               <Link className='detail-blog' to={`/proddetail/${product.id}`}> 
               <BsInfoLg className='i'/>
               </Link>

@@ -47,7 +47,6 @@ const ProductDetail = () => {
       }
 
 
-        console.log(imgs);
       } catch (error) {
         console.error(error);
       }
@@ -56,6 +55,8 @@ const ProductDetail = () => {
   
     fetchDataByid();
   }, []);;
+
+
   if (!thisProd) {
     return <div className='White sweet-loading'>
   <MoonLoader
