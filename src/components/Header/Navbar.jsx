@@ -85,7 +85,8 @@ function NavBar() {
             </ul>
             </li>
             <li className="icon2 icon">
-         <CiShoppingBasket/>
+         <CiShoppingBasket className="card-basket" />
+         <span className="count-cart">0</span>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>

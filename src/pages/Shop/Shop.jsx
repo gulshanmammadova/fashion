@@ -9,8 +9,11 @@ import { SlBasket } from "react-icons/sl";
 import { BsInfoLg } from "react-icons/bs";
 import './Shop.css';
 import Accordion from 'react-bootstrap/Accordion';
+import { useCart } from "react-use-cart";
 const Shop = () => {
   const [prod, setProd] = useState([])
+  const { handleClick } = useCart();
+
   const [colors, setColors] = useState([])
 
   useEffect(() => {
@@ -101,7 +104,7 @@ const Shop = () => {
       <Card.Img className='b-0 card-product-img' variant="top" src={`https://${product.imageUrl}`} />
       <div className='card-icons'>
               <TiHeartOutline className='i'/>
-              <SlBasket className='i'/>
+              <SlBasket className='i' onClick={()=>{handleClick(product)}}/>
               <Link className='detail-blog' to={`/proddetail/${product.id}`}> 
               <BsInfoLg className='i'/>
               </Link>

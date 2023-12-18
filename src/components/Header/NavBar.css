@@ -125,6 +125,19 @@ padding: 4px 6px;
 li.icon:hover{
 color: #72bc98;
 }
+.card-basket{
+  position: relative;
+}
+.count-cart{
+  border-radius: 50%;
+  background-color: #1f5156;
+  top: 16px;
+  font-size: 12px;
+  padding: 2px 7px;
+  position: absolute;
+  right: 24px;
+  color:white;
+}
 .nav-item .active {
   color: #72bc98;
 }
