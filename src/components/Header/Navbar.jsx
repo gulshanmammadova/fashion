@@ -84,6 +84,7 @@ function NavBar() {
               <Link to='/wishlist'>
               <IoMdHeartEmpty/>
               </Link>
+              
             </li>
             <li className="icon1 icon">
             <CiUser/>
