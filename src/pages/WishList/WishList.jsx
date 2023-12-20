@@ -1,6 +1,6 @@
 import React from 'react'
 import { useWishlist } from "react-use-wishlist";
-
+import './WishList.css'
 const WishList = () => {
     const {
         isWishlistEmpty,
@@ -9,7 +9,7 @@ const WishList = () => {
         removeWishlistItem,
       } = useWishlist();
     
-      if (isWishlistEmpty) return <p>Your wishlist is empty</p>;
+      if (isWishlistEmpty) return <p className='empty-wishlist'>Your wishlist is empty</p>;
     
   return (
         <>

@@ -4,6 +4,7 @@
 .contact-fullName{
     background-color: aqua;
     color: black;
+    margin-top: -13px;
   }
   .contact-fullName div h2{
     padding: 90px 0;

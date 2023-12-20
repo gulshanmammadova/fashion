@@ -10,6 +10,12 @@
   z-index: 999999999999920;
   background-color: white;
 }
+.nav-links:hover{
+color: #1f5156;
+}
+.nav-links{
+  transition: 0.3s;
+}
 .nav-menu{
   margin-bottom: 0 !important;
 }
@@ -21,6 +27,8 @@
   height: 80px;
   max-width: 1500px;
   position: relative;
+  margin: 0 auto;
+  margin-top: -12px;
 }
 .nav-logo img{
 width: 96px;
@@ -165,13 +173,28 @@ color: #72bc98;
     opacity: 1;
     transition: all 0.5s ease;
   }
-
+.count-cart{
+  width: 5%;
+  top: 61px;
+  font-size: 10px;
+  padding: 2px 7px;
+  position: absolute;
+  left: 54%;
+}
   .nav-menu.active {
-    background: #1f5156;
+    background: #fff;
     left: 0px;
+    top: 120px;
+    width: 104%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99999999999999;
+  }
+  ul.list-account{
+    top: 25px;
+    display: none;
+    transition: 1s;
+    right: 34%;
   }
   .nav-item .active {
     color: #99FCCC;

@@ -11,7 +11,7 @@ const Blog = () => {
   const [searchByNames, setSearchByNames] = useState(datas);
   const [inp, setInp] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
-
+const [active, setActive] = useState(false)
   useEffect(() => {
     const allTags = datas.reduce((accumulator, currentBlog) => {
       currentBlog.tags.forEach(tag => {
@@ -33,6 +33,7 @@ const Blog = () => {
   const handleTagClick = (tag) => {
     setSelectedTag(tag);
     filterBlogs(tag, inp);
+    setActive(true)
   };
 
   const filterBlogs = (tag, input) => {
@@ -79,13 +80,13 @@ const Blog = () => {
           )}
         </div>
         <div className='filter col-lg-2'>
-          <input type="text" onChange={handleInputChange} value={inp} />
+          <input type="text" className='w-100 ms-4 my-4 px-2 py-2' placeholder='Search Blog...' onChange={handleInputChange} value={inp} />
           <div>
-            <h3>Tags</h3>
+            <h3 className='ms-4 my-4'>Tags</h3>
             <ul>
               {tags.map((tag, i) => (
                 <li
-                  className='li-tag'
+                  className={active ? 'li-tag nav-item' : 'li-tag '}
                   key={i}
                   onClick={() => handleTagClick(tag)}
                   style={{ color: 'rgb(92, 163, 163) !important', listStyleType: 'none', marginTop: '-20' }}>

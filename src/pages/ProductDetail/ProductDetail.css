@@ -8,7 +8,9 @@ a{
     cursor: pointer;
 }
 
-
+.info{
+  justify-content: space-between;
+}
 
 .carousel-item img{
 

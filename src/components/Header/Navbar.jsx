@@ -38,7 +38,7 @@ function NavBar() {
                 exact
                 to="/about"
                 activeClassName="active"
-                className="nav-links"
+                className=" nav-links"
                 onClick={handleClick}
               >
                 About
@@ -90,8 +90,18 @@ function NavBar() {
             <CiUser/>
             
             <ul className="list-account"> 
-              <li>Login</li>
-              <li>Register</li>
+              <li>
+              <Link to='/login'>
+
+                Login
+              </Link>
+                
+                </li>
+              <li>
+                <Link to='/register'>
+                Register
+                </Link>
+                </li>
               <li>Log Out</li>
             </ul>
             </li>

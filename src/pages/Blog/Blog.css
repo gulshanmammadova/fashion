@@ -14,6 +14,32 @@ text-decoration: none;
     justify-content: space-between;
 
 }
+.nav-links:hover{
+    color: #1f5156;
+    }
+    .nav-links{
+      transition: 0.3s;
+    }
+    .selected-item:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        background: transparent;
+        transition: width 0.7s ease, background-color 0.5s ease;
+      }
+      
+      .selected-item:after {
+        width: 100%;
+        background: #72bc98;
+      }
+    .nav-links {
+        color: #000000;
+        text-decoration: none;
+        padding: 0.5rem 0;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+      }
 .li-tag{
 cursor: pointer;
 }

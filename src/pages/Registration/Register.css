@@ -1,0 +1,76 @@
+
+.all-register-page .all-register-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.all-register-page a, .all-register-page a:visited {
+    color: #fff;
+}
+
+.all-register-page input[type="text"],
+.all-register-page input[type="password"],
+.all-register-page button,
+.all-register-page textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.all-register-page label,
+.all-register-page button {
+  margin-top: 1rem;
+}
+
+.all-register-page button {
+  padding: 0.5rem;
+}
+
+.all-register-page .instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.all-register-page .instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.all-register-page .offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.all-register-page .hide {
+    display: none;
+}
+
+.all-register-page .valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.all-register-page .invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.all-register-page .errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.all-register-page .line {
+    display: inline-block;
+}

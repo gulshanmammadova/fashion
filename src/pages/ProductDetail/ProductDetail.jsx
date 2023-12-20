@@ -21,7 +21,9 @@ const ProductDetail = () => {
   const [thisProd, setThisProd] = useState(null);
   const [imgs, setImgs] = useState([]);
   const { id } = useParams();
+  const { inCart } = useCart();
 
+  const { addItem } = useCart();
   useEffect(() => {
     const fetchDataByid = async () => {
       const url = `https://asos2.p.rapidapi.com/products/v3/detail?id=${id}&lang=en-US`;
@@ -66,7 +68,7 @@ const ProductDetail = () => {
     return (
       <div className='White sweet-loading'>
         <MoonLoader
-          color='blueviolet'
+          color='#89BC98'
           loading={loading}
           cssOverride={override}
           size={30}
@@ -100,10 +102,11 @@ const ProductDetail = () => {
           <span class="discounted-price mx-2">
             <span>{thisProd.price.current.text}</span>
           </span>
+          <div className=' info' >
           <p dangerouslySetInnerHTML={{ __html: thisProd && thisProd.description }}>
           </p>
-          <p dangerouslySetInnerHTML={{ __html: thisProd && thisProd.info.about }}>
-          </p>
+         </div>
+       
           <input
             type="number"
             min="1"
@@ -113,13 +116,13 @@ const ProductDetail = () => {
           />
           <button
             className="add-to-cart text-decoration-none"
-            onClick={() => updateItemQuantity(thisProd.id, first)}
+            onClick={() => inCart(thisProd.id) ? updateItemQuantity(thisProd.id, first) : addItem(thisProd, first) }
           >
             ADD TO CART
           </button>
-          <p dangerouslySetInnerHTML={{ __html: thisProd && thisProd.brand.name }}>
-          </p>
+        
           <p>Aviability:{thisProd.isInStock ? 'In Stock' : 'Out Of Stock'}</p>
+      {console.log(thisProd)}
         </div>
       </div>
     </div>
