@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
-import CodeIcon from '../../images/logo/logo.png';
+import CodeIcon from "../../images/logo/logo.png";
 import { CiUser } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
-import { useCart } from 'react-use-cart';
+import { useCart } from "react-use-cart";
 import { IoMdHeartEmpty } from "react-icons/io";
 
 function NavBar() {
@@ -15,8 +15,8 @@ function NavBar() {
   const handleClick = () => setClick(!click);
 
   const activeUser = () => {
-    const storedData = JSON.parse(localStorage.getItem('userData')) || [];
-    const foundUser = storedData.find(user => user.userData.isActive === 1);
+    const storedData = JSON.parse(localStorage.getItem("userData")) || [];
+    const foundUser = storedData.find((user) => user.userData.isActive === 1);
 
     if (foundUser) {
       return foundUser;
@@ -27,23 +27,23 @@ function NavBar() {
 
   const activeUserData = activeUser();
   const handleLogout = () => {
-    const storedData = JSON.parse(localStorage.getItem('userData')) || [];
-    const updatedData = storedData.map(user => {
+    const storedData = JSON.parse(localStorage.getItem("userData")) || [];
+    const updatedData = storedData.map((user) => {
       if (user.userData.isActive === 1) {
         return {
           ...user,
           userData: {
             ...user.userData,
-            isActive: 0
-          }
+            isActive: 0,
+          },
         };
       }
       return user;
     });
 
-    localStorage.setItem('userData', JSON.stringify(updatedData));
-    if (window.confirm('Do you want to Log out??')) {
-      window.location.href = '/';
+    localStorage.setItem("userData", JSON.stringify(updatedData));
+    if (window.confirm("Do you want to Log out??")) {
+      window.location.href = "/";
     }
   };
 
@@ -111,9 +111,13 @@ function NavBar() {
               </NavLink>
             </li>
           </ul>
-          <ul className={click ? "nav-menu active nav-menu2" : "nav-menu2 nav-menu"}>
+          <ul
+            className={
+              click ? "nav-menu active nav-menu2" : "nav-menu2 nav-menu"
+            }
+          >
             <li className="icon icon1">
-              <Link to='/wishlist'>
+              <Link to="/wishlist">
                 <IoMdHeartEmpty />
               </Link>
             </li>
@@ -122,29 +126,29 @@ function NavBar() {
               {activeUserData ? (
                 <ul className="list-account">
                   <li>
-                    <Link to='/myaccount'>
-                      Profile
-                    </Link>
+                    <Link to="/myaccount">Profile</Link>
                   </li>
-                  <li onClick={handleLogout} onMouseEnter={() => setShowLoginRegister(false)} onMouseLeave={() => setShowLoginRegister(true)}>Log Out</li>
+                  <li
+                    onClick={handleLogout}
+                    onMouseEnter={() => setShowLoginRegister(false)}
+                    onMouseLeave={() => setShowLoginRegister(true)}
+                  >
+                    Log Out
+                  </li>
                 </ul>
               ) : (
                 <ul className="list-account">
                   <li>
-                    <Link to='/login'>
-                       Login
-                    </Link>
+                    <Link to="/login">Login</Link>
                   </li>
                   <li>
-                    <Link to='/register'>
-                    Register
-                    </Link>
+                    <Link to="/register">Register</Link>
                   </li>
                 </ul>
               )}
             </li>
             <li className="icon2 icon">
-              <Link to='/basket'>
+              <Link to="/basket">
                 <CiShoppingBasket className="card-basket" />
                 <span className="count-cart">{totalUniqueItems}</span>
               </Link>
@@ -166,5 +170,4 @@ function NavBar() {
     </>
   );
 }
-
 export default NavBar;
