@@ -1,18 +1,52 @@
 import React, { useState } from "react";
-import { NavLink ,Link} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
-import {  HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
-import CodeIcon from '../../images/logo/logo.png'
+import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
+import CodeIcon from '../../images/logo/logo.png';
 import { CiUser } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
-import {useCart} from 'react-use-cart'
+import { useCart } from 'react-use-cart';
 import { IoMdHeartEmpty } from "react-icons/io";
+
 function NavBar() {
   const [click, setClick] = useState(false);
-  const {   
-    totalUniqueItems
-  } = useCart();
+  const { totalUniqueItems } = useCart();
+  const [showLoginRegister, setShowLoginRegister] = useState(false);
   const handleClick = () => setClick(!click);
+
+  const activeUser = () => {
+    const storedData = JSON.parse(localStorage.getItem('userData')) || [];
+    const foundUser = storedData.find(user => user.userData.isActive === 1);
+
+    if (foundUser) {
+      return foundUser;
+    } else {
+      return null;
+    }
+  };
+
+  const activeUserData = activeUser();
+  const handleLogout = () => {
+    const storedData = JSON.parse(localStorage.getItem('userData')) || [];
+    const updatedData = storedData.map(user => {
+      if (user.userData.isActive === 1) {
+        return {
+          ...user,
+          userData: {
+            ...user.userData,
+            isActive: 0
+          }
+        };
+      }
+      return user;
+    });
+
+    localStorage.setItem('userData', JSON.stringify(updatedData));
+    if (window.confirm('Do you want to Log out??')) {
+      window.location.href = '/';
+    }
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -20,7 +54,6 @@ function NavBar() {
           <NavLink exact to="/" className="nav-logo">
             <img src={CodeIcon} alt="Logo" />
           </NavLink>
-
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -38,7 +71,7 @@ function NavBar() {
                 exact
                 to="/about"
                 activeClassName="active"
-                className=" nav-links"
+                className="nav-links"
                 onClick={handleClick}
               >
                 About
@@ -79,43 +112,45 @@ function NavBar() {
             </li>
           </ul>
           <ul className={click ? "nav-menu active nav-menu2" : "nav-menu2 nav-menu"}>
-
             <li className="icon icon1">
               <Link to='/wishlist'>
-              <IoMdHeartEmpty/>
+                <IoMdHeartEmpty />
               </Link>
-              
             </li>
             <li className="icon1 icon">
-            <CiUser/>
-            
-            <ul className="list-account"> 
-              <li>
-              <Link to='/login'>
-
-                Login
-              </Link>
-                
-                </li>
-              <li>
-                <Link to='/register'>
-                Register
-                </Link>
-                </li>
-              <li>Log Out</li>
-            </ul>
+              <CiUser />
+              {activeUserData ? (
+                <ul className="list-account">
+                  <li>
+                    <Link to='/myaccount'>
+                      Profile
+                    </Link>
+                  </li>
+                  <li onClick={handleLogout} onMouseEnter={() => setShowLoginRegister(false)} onMouseLeave={() => setShowLoginRegister(true)}>Log Out</li>
+                </ul>
+              ) : (
+                <ul className="list-account">
+                  <li>
+                    <Link to='/login'>
+                       Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/register'>
+                    Register
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className="icon2 icon">
               <Link to='/basket'>
-              <CiShoppingBasket className="card-basket" />
-         <span className="count-cart">{totalUniqueItems}</span>
+                <CiShoppingBasket className="card-basket" />
+                <span className="count-cart">{totalUniqueItems}</span>
               </Link>
- 
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
-            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
-
             {click ? (
               <span className="icon">
                 <HamburgetMenuOpen />{" "}

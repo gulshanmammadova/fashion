@@ -84,7 +84,8 @@ console.log(user,pwd,id)
                 let updatedList = [...storedData, {userData }];
                 // localStorage.setItem('list', JSON.stringify(updatedList));
                 localStorage.setItem('userData', JSON.stringify(updatedList));
-console.log(userData)
+                window.location.href = '/login';
+// console.log(userData)
             //     setUser('');
             //     setPwd('');
             //     setMatchPwd('');

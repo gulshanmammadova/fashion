@@ -49,7 +49,6 @@ const handleLogin = async (e) => {
         setErrMsg("Invalid Entry");
         return;
     }
-    setSuccess(true);
     let storedData = JSON.parse(localStorage.getItem('userData')) || [] ;
     const foundUserIndex = storedData.findIndex(
         (x) => x.userData.username.trim().toLowerCase() === user.trim().toLowerCase() && x.userData.password === pwd
@@ -60,8 +59,17 @@ const handleLogin = async (e) => {
   
        
         localStorage.setItem('userData', JSON.stringify(storedData));
+        window.location.href = '/shop';
+    setSuccess(true);
+
+
       } else {
-        storedData[foundUserIndex].userData.isActive = 0;
+        // storedData[foundUserIndex].userData.isActive = 0;
+alert('Please ,Register!!!')
+setSuccess(false);
+window.location.href = '/register';
+
+
       }
 }
   return (
