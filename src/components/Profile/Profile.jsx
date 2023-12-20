@@ -12,7 +12,7 @@ const Profile = () => {
   return (
     <div>
 {
-    console.log(myBasket)
+    // console.log(myBasket)
 }
 
     </div>
