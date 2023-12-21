@@ -12,7 +12,7 @@ const REGISTER_URL = '/register';
 const Register = () => {
     const userRef = useRef();
     const errRef = useRef();
-const [id,setid]=useState('');
+    const [id, setId] = useState('');
     const [user, setUser] = useState('');
     const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false);
@@ -39,12 +39,23 @@ const [id,setid]=useState('');
     useEffect(() => {
         setValidPwd(PWD_REGEX.test(pwd));
         setValidMatch(pwd === matchPwd);
-        setid(v4())
+        setId(v4());
     }, [pwd, matchPwd]);
 
     useEffect(() => {
         setErrMsg('');
     }, [user, pwd, matchPwd]);
+
+    useEffect(() => {
+        // Check if the user exists in local storage
+        const storedData = JSON.parse(localStorage.getItem('userData')) || [];
+        const userExists = storedData.find((data) => data.userData.username === user);
+
+        if (userExists) {
+            // Alert if the user already exists
+            alert('User already exists! Please choose a different username.');
+        }
+    }, [user]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -56,51 +67,23 @@ const [id,setid]=useState('');
             setErrMsg("Invalid Entry");
             return;
         }
-console.log(user,pwd,id)
-        // try {
-            // const response = await axios.post(
-            //     REGISTER_URL,
-            //     JSON.stringify({ user, pwd }),
-            //     {
-            //         headers: { 'Content-Type': 'application/json' },
-            //         withCredentials: true
-            //     }
-            // );
 
-            // console.log(response?.data);
-            // console.log(response?.accessToken);
-            // console.log(JSON.stringify(response));
-            setSuccess(true);
+        setSuccess(true);
 
-            // if (response?.data && response?.accessToken) {
-                const userData = {
-                    username: user,
-                    userId: id,
-                    password:pwd,
-                    basket:[],
-                    isActive:0
-                };
-                let storedData = JSON.parse(localStorage.getItem('userData')) || [] ;
-                let updatedList = [...storedData, {userData }];
-                // localStorage.setItem('list', JSON.stringify(updatedList));
-                localStorage.setItem('userData', JSON.stringify(updatedList));
-                window.location.href = '/login';
-// console.log(userData)
-            //     setUser('');
-            //     setPwd('');
-            //     setMatchPwd('');
-            // }
-        // } catch (err) {
-        //     if (!err?.response) {
-        //         setErrMsg('No Server Response');
-        //     } else if (err.response?.status === 409) {
-        //         setErrMsg('Username Taken');
-        //     } else {
-        //         setErrMsg('Registration Failed');
-        //     }
-        //     errRef.current.focus();
-        // }
+        const userData = {
+            username: user,
+            userId: id,
+            password: pwd,
+            basket: [],
+            isActive: 0
+        };
+        let storedData = JSON.parse(localStorage.getItem('userData')) || [];
+
+        let updatedList = [...storedData, { userData }];
+        localStorage.setItem('userData', JSON.stringify(updatedList));
+        window.location.href = '/login';
     };
+
 
     return (
         <div className="all-register-page">

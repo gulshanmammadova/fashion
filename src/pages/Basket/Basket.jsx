@@ -37,9 +37,12 @@ const Basket = () => {
 
       storedData[foundUserIndex].userData.basket = updatedBasket;
       localStorage.setItem('userData', JSON.stringify(storedData));
-    }
+      emptyCart();
+    window.location.href = '/myaccount';
+      return;
 
-    emptyCart();
+    }
+    window.location.href = '/login';
   };
   const calculateCartTotal = () => {
     let total = 0;
