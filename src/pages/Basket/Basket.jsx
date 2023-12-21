@@ -27,7 +27,7 @@ const Basket = () => {
   // }, [])
   const addToMyCard = () => {
     let storedData = JSON.parse(localStorage.getItem('userData')) || [];
-    console.log(storedData)
+    // console.log(storedData)
     const foundUserIndex = storedData.findIndex((x) => x.userData.isActive === 1);
 
     if (foundUserIndex !== -1) {
