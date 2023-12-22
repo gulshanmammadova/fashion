@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { useCart } from "react-use-cart";
 import MoonLoader from "react-spinners/MoonLoader";
+import UpIcon from '../../components/Up/UpIcon';
 
 const override = {
   display: "block",
@@ -125,6 +126,8 @@ const ProductDetail = () => {
       {console.log(thisProd)}
         </div>
       </div>
+  <UpIcon/>
+
     </div>
   );
 };

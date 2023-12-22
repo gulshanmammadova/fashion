@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useState } from 'react';
+import UpIcon from '../../components/Up/UpIcon';
 import { useEffect } from 'react';
 import {useCart} from 'react-use-cart'
 const Basket = () => {
@@ -71,7 +72,9 @@ const Basket = () => {
       </ul>
       <p>Total: {calculateCartTotal()} $</p>
       <button onClick={()=>addToMyCard()}>Shop Now</button>
-      {console.log(items)}
+      {/* {console.log(items)} */}
+  <UpIcon/>
+
     </div>
   )
 }

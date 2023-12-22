@@ -1,5 +1,6 @@
 import React from 'react'
 import { useWishlist } from "react-use-wishlist";
+import UpIcon from '../../components/Up/UpIcon';
 import './WishList.css'
 const WishList = () => {
     const {
@@ -23,6 +24,8 @@ const WishList = () => {
           </li>
         ))}
       </ul>
+  <UpIcon/>
+
     </>
   )
 }

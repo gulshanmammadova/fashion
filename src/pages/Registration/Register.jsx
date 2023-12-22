@@ -5,6 +5,7 @@ import axios from './api/axios';
 import './Register.css'
 import { v4 } from 'uuid';
 import {Link} from 'react-router-dom'
+import UpIcon from '../../components/Up/UpIcon';
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = '/register';
@@ -180,6 +181,7 @@ const Register = () => {
                             <Link to='/login'>Sign In</Link>
                         </span>
                     </p> */}
+  <UpIcon/>
             
         </div>
     )

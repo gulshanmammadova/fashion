@@ -77,7 +77,8 @@ Forget about struggling to do everything at once: taking care of the family, run
   }
 </div>
     </div>
- <UpIcon/>
+  <UpIcon/>
+
     </div>
 
   )

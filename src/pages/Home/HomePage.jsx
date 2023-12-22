@@ -1,8 +1,12 @@
 import React from 'react'
+import UpIcon from '../../components/Up/UpIcon';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+  <UpIcon/>
+      
+    </div>
   )
 }
 

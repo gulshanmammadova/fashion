@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Login.css'
 import { Link } from 'react-router-dom';
 import {v4} from 'uuid'
+import UpIcon from '../../components/Up/UpIcon';
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const Login = () => {
@@ -139,6 +140,7 @@ window.location.href = '/register';
                     <Link to="/register">Sign In</Link>
                 </span>
             </p> */}
+  <UpIcon/>
  
 </div>
   )

@@ -16,7 +16,6 @@ import WishList from './pages/WishList/WishList';
 import Register from './pages/Registration/Register'
 import Login from './pages/Login/Login';
 import Profile from './components/Profile/Profile';
-
 function App() {
   
   return (

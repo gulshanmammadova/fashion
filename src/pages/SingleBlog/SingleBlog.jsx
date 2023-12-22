@@ -3,15 +3,24 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import blogs from '../../data/blog';
 import './SingleBlog.css';
-
+import MoonLoader from "react-spinners/MoonLoader";
+import UpIcon from '../../components/Up/UpIcon';
+const override = {
+  display: "block",
+  margin: "0 auto",
+  borderColor: "blueviolet",
+};
 const SingleBlog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const foundBlog = blogs.find(blog => blog.id == id);
     if (foundBlog) {
       setBlog(foundBlog);
+  setLoading(false);
+
     }
   }, [id]);
 
@@ -111,9 +120,19 @@ const SingleBlog = () => {
 
           </div>
         ) : (
-          <p>Loading...</p>
+          <MoonLoader
+                color='#89BC98'
+                loading={loading}
+                cssOverride={override}
+                size={30}
+                margintop={30}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
         )}
       </div>
+  <UpIcon/>
+
     </div>
   );
 };

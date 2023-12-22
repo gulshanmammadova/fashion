@@ -11,6 +11,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { CartProvider, useCart } from "react-use-cart";
 import { WishlistProvider, useWishlist } from "react-use-wishlist";
 import MoonLoader from "react-spinners/MoonLoader";
+import UpIcon from '../../components/Up/UpIcon';
 import Pagination from 'react-bootstrap/Pagination';
 const override = {
   display: "block",
@@ -121,6 +122,8 @@ try {
       </div>
         </div>
       </div>
+  <UpIcon/>
+
     </div>
   );
 };

@@ -5,6 +5,7 @@ import datas from '../../data/blog';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import './Blog.css';
+import UpIcon from '../../components/Up/UpIcon';
 
 const Blog = () => {
   const [tags, setTags] = useState([]);
@@ -97,6 +98,8 @@ const [active, setActive] = useState(false)
           </div>
         </div>
       </div>
+  <UpIcon/>
+
     </div>
   );
 }
