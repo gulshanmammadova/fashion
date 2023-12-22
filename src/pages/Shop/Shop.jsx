@@ -80,7 +80,7 @@ try {
                 loading={loading}
                 cssOverride={override}
                 size={30}
-                marginTop={30}
+                margintop={30}
                 aria-label="Loading Spinner"
                 data-testid="loader"
               />
@@ -98,7 +98,7 @@ try {
                   <Card.Body>
                     <Card.Title className='blog-card-title'>
                     <del style={{fontSize:13}}>{product.price.previous.value !== product.price.current.value ? product.price.previous.text : null}</del>
-                    <span class="discounted-price mx-2">
+                    <span className="discounted-price mx-2">
             <span style={{fontSize:23}}>{product.price.current.text}</span>
           </span>
                     </Card.Title>

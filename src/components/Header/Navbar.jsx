@@ -51,15 +51,13 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <NavLink  to="/" className="nav-logo">
             <img src={CodeIcon} alt="Logo" />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -68,9 +66,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/about"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -79,9 +76,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/blog"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -90,9 +86,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/shop"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -101,9 +96,8 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/contact"
-                activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >

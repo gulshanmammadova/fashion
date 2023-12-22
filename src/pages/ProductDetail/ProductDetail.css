@@ -22,6 +22,7 @@ input.count
     padding: 10px;
     margin: 3px 13px 7px 0px;
 }.shop-page-info{
+  margin-top: 91px !important;
   background-image:url("https://sebrae.com.br/Sebrae/Portal%20Sebrae/Conte%C3%BAdos/Moda/Imagens%20Moda/Retomada%20Segura%20das%20Atividades_%20Setor%20de%20Moda.png");
   background-position: center;
   text-align: center;

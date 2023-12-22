@@ -86,7 +86,7 @@ const [active, setActive] = useState(false)
             <ul>
               {tags.map((tag, i) => (
                 <li
-                  className={active ? 'li-tag nav-item' : 'li-tag '}
+                  className='li-tag nav-item'
                   key={i}
                   onClick={() => handleTagClick(tag)}
                   style={{ color: 'rgb(92, 163, 163) !important', listStyleType: 'none', marginTop: '-20' }}>
