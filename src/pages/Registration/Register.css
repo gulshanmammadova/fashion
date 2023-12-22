@@ -6,6 +6,12 @@
     flex-grow: 1;
     padding-bottom: 1rem;
 }
+.register{
+    width: 19%;
+    padding: 30px 0;
+    width: 19%;
+    margin: 100px auto;
+}
 
 .all-register-page a, .all-register-page a:visited {
     color: #fff;

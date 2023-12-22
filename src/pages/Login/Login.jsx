@@ -2,10 +2,11 @@ import React from 'react'
 import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './Login.css'
+import { Link } from 'react-router-dom';
 import {v4} from 'uuid'
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-
 const Login = () => {
   const userRef = useRef();
 const errRef = useRef();
@@ -46,7 +47,7 @@ const handleLogin = async (e) => {
     const v2 = PWD_REGEX.test(pwd);
 
     if (!v1 || !v2) {
-        setErrMsg("Invalid Entry");
+        setErrMsg("");
         return;
     }
     let storedData = JSON.parse(localStorage.getItem('userData')) || [] ;
@@ -73,19 +74,12 @@ window.location.href = '/register';
       }
 }
   return (
-    <div className="all-register-page">
-    {success ? (
-        <section>
-            <h1>Success!</h1>
-            <p>
-                <a href="#">Sign In</a>
-            </p>
-        </section>
-    ) : (
-        <section>
-            <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-            <h1>Register</h1>
-            <form onClick={handleLogin}>
+    <div className="all-register-page login">
+   
+
+            {/* <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p> */}
+            <h1>Login</h1>
+            <form onClick={handleLogin} className='login-form'>
                 <label htmlFor="username">
                     Username:
                     <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
@@ -139,15 +133,13 @@ window.location.href = '/register';
                 
                 <button disabled={!validName || !validPwd }>Sign Up</button>
             </form>
-            <p>
+            {/* <p>
                 Already registered?<br />
                 <span className="line">
-                    {/*put router link here*/}
-                    <a href="#">Sign In</a>
+                    <Link to="/register">Sign In</Link>
                 </span>
-            </p>
-        </section>
-    )}
+            </p> */}
+ 
 </div>
   )
 }

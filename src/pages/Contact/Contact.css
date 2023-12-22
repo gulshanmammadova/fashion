@@ -6,6 +6,9 @@
     color: black;
     margin-top: -13px;
   }
+  .submit-btn-contact{
+    border: 1px solid #6fcfb8 !important;
+  }
   .contact-fullName div h2{
     padding: 90px 0;
     margin: 13px auto;

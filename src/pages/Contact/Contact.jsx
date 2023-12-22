@@ -60,7 +60,7 @@ Sun: 9:00 am - 2:00 pm</p>
 <input type="email" name="email" placeholder='Email' id="" className='w-100 p-1 m-1'/>
 <label htmlFor="textarea" className='w-100 my-1'>Message</label>
 <textarea name="textarea" id="" cols="30" rows="4" className='w-100 p-1 m-1' placeholder='Message'></textarea>
-<button className='btn btn-large w-100 py-2 mx-auto my-2'> SUBMIT</button>
+<button className='btn btn-large w-100 py-2 mx-auto my-2 submit-btn-contact'> SUBMIT</button>
 </form>
         </div>
     </div>

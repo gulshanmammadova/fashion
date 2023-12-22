@@ -19,8 +19,8 @@ const About = () => {
       <div className="row">
         {firstThreeBlogs.map((post, index) => (
           <div key={index} className="col-lg-4 mb-4">
-            <Card className='card'>
-              <Card.Img variant="top" src={post.mainImg} alt={post.title} />
+            <Card className=' blog-card-about' style={{height:'371px !important'}}>
+              <Card.Img className='about-card-top-img' style={{margin:'0 !important',width:'100% !important'}} variant="top" src={post.mainImg} alt={post.title} />
               <Card.Body className='card-body'>
                 <Card.Title>{post.title}</Card.Title>
                 <Card.Text>{post.date}</Card.Text>

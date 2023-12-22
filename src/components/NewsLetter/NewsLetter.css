@@ -23,10 +23,13 @@ input{
     margin: 30px auto;
 }
 .inp-for-news-letter{
-    padding-bottom: 8px;
+    padding-bottom: 6px !important;
     /* padding: 2px 1px; */
 
     border: 1px solid #dcdcdc;
+}
+.inp-for-news-letter ::placeholder{
+    padding-left: 6px;
 }
 .all-news{
     align-items: center;

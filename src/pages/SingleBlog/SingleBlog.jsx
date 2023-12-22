@@ -28,7 +28,7 @@ const SingleBlog = () => {
               />
              
             </div>
-            <div className='d-flex flex-wrap mx-auto' style={{textAlign:'center'}}>
+            <div className='d-flex flex-wrap mx-auto blog-images' style={{textAlign:'center'}}>
             {blog.otherImg &&
                 blog.otherImg.map((image, i) => (
                   <img

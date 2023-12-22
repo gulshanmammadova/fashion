@@ -16,7 +16,7 @@ export default function App() {
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4' style={{textAlign:'center'}}>
-                <MDBIcon icon="gem" className="me-3" />
+                {/* <MDBIcon icon="gem" className="me-3" /> */}
               <img src={img3} alt="" style={{width:66}} />
               </h6>
               <p>

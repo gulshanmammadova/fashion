@@ -41,6 +41,7 @@ padding: 5px 8px;
 }
 .all-shop-f{
     justify-content: space-between;
+    margin-top: 50px !important;
 }
 .card-icons .i:hover{
    color: #72bc98 !important;
@@ -66,7 +67,7 @@ border: 1px solid #72bc98 !important;
         width: 100%;
         margin:0 !important;
     }
-    .card-img-top {
+    .card-img-top.card-product-img {
         width: 90% !important;
         margin: 5px auto !important;
     }

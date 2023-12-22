@@ -123,6 +123,10 @@
     letter-spacing: 1.5px;
 
 }
+.blog-images{
+    margin: 52px auto;
+    justify-content: space-around;
+}
 .comment p{
     color: #6E6E6E;
     font-family: "Poppins", Sans-serif;

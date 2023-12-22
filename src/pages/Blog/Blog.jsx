@@ -47,7 +47,7 @@ const [active, setActive] = useState(false)
   };
 
   return (
-    <div className='container'>
+    <div className='container blog-all-page'>
       <div className='blog-cards-all d-flex'>
         <div className='d-flex col-lg-8' style={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
           {searchByNames.length > 0 ? (
@@ -62,7 +62,7 @@ const [active, setActive] = useState(false)
               </Card>
             ))
           ) : (
-            <div>
+            <div className='error-blog'>
               <div>{alert('Blog Not Found')}</div>
 {
    datas.map((blog, index) => (

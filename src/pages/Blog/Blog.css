@@ -3,13 +3,19 @@
     color: rgb(92, 163, 163) !important;
     
 }
+.blog-card-title.h5{
+  font-size: 13px;
+}
 .detail-blog{
     color: rgb(92, 163, 163) !important;
 font-weight: bold;
 text-decoration: none;
 }
+p.card-text{
+  font-size: 16px;
+}
 .card-1{
-    height: 345px !important;
+  height: 318px !important;
     flex-direction: column;
     justify-content: space-between;
 
@@ -17,6 +23,16 @@ text-decoration: none;
 .nav-links:hover{
     color: #1f5156;
     }
+  .blog-all-page .blog-cards-all
+    {
+    margin-top: 115px !important;
+
+  }
+  .error-blog{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
     .nav-links{
       transition: 0.3s;
     }
@@ -47,7 +63,7 @@ cursor: pointer;
     border-radius: 0;
 } 
 .blog-cards-all .card-body{
-display: block;
+display: flex;
 font-size: 18px;
 font-weight: 400;
 color: #000;

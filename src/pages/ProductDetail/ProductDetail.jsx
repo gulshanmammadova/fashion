@@ -81,7 +81,7 @@ const ProductDetail = () => {
   }
 
   return (
-    <div>
+    <div className='shop-page'>
       <div class="shop-all">
         <div class="shop-page-info ">
           <div class="shop-bread-crump  mx-auto">

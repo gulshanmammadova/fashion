@@ -15,8 +15,11 @@ const NewsLetter = () => {
     </div>
 
     <div className='col-lg-6 col-md-6 col-sm'>
-<input type="text" className='inp-for-news-letter mx-auto ' placeholder='Email Address' />
-<button className='btn btn-large w-25'> SUBMIT</button>
+      <form action="">
+
+      <input type="email" className='inp-for-news-letter mx-auto ' placeholder='Email Address' />
+<button className='btn btn-large w-25' > SUBMIT</button>
+      </form>
 
     </div>
     </div>        
