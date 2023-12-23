@@ -3,6 +3,9 @@
     color: rgb(92, 163, 163) !important;
     
 }
+.blog-all-page .card{
+  height: 340px !important;
+}
 .blog-card-title.h5{
   font-size: 13px;
 }

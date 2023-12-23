@@ -1,0 +1,25 @@
+.w-fill-content{
+    width: 100% !important;
+}
+.home-img{
+    width: 700px;
+}
+h3.new-font{
+    font-family: auto;
+    font-style: italic;
+    font-size: 43px;
+    font-weight: 100;
+    color: #72bc98;
+}
+.home-p{
+    font-family:auto ;
+}
+.w-65{
+    width: 65% !important;
+}
+.marquee{
+    color: white;
+    background-color: #85cca9;
+font-size: 20px;
+font-style: italic;
+}

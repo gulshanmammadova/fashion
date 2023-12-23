@@ -27,6 +27,9 @@ function NavBar() {
 
   const activeUserData = activeUser();
   const handleLogout = () => {
+  
+    const confirmation = window.confirm("Do you want to Log out??");
+  if (confirmation) {
     const storedData = JSON.parse(localStorage.getItem("userData")) || [];
     const updatedData = storedData.map((user) => {
       if (user.userData.isActive === 1) {
@@ -42,9 +45,11 @@ function NavBar() {
     });
 
     localStorage.setItem("userData", JSON.stringify(updatedData));
-    if (window.confirm("Do you want to Log out??")) {
-      window.location.href = "/";
-    }
+    window.location.href = "/";
+  } else {
+   return
+  }
+
   };
 
   return (

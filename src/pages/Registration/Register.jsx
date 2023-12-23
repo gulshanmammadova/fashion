@@ -48,15 +48,8 @@ const Register = () => {
     }, [user, pwd, matchPwd]);
 
     useEffect(() => {
-        // Check if the user exists in local storage
-        const storedData = JSON.parse(localStorage.getItem('userData')) || [];
-        const userExists = storedData.find((data) => data.userData.username === user);
-
-        if (userExists) {
-            // Alert if the user already exists
-            alert('User already exists! Please choose a different username.');
-        }
-    }, [user]);
+        
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -80,9 +73,20 @@ const Register = () => {
         };
         let storedData = JSON.parse(localStorage.getItem('userData')) || [];
 
-        let updatedList = [...storedData, { userData }];
-        localStorage.setItem('userData', JSON.stringify(updatedList));
-        window.location.href = '/login';
+        
+        const userExists = storedData.find((data) => data.userData.username === user);
+
+        if (userExists) {
+            alert('User already exists! Please choose a different username.');
+        setSuccess(false)
+    window.location.href = "/register";
+
+        }else{
+            let updatedList = [...storedData, { userData }];
+            localStorage.setItem('userData', JSON.stringify(updatedList));
+            window.location.href = '/login';
+        }
+        
     };
 
 

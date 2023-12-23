@@ -27,8 +27,8 @@ const [active, setActive] = useState(false)
   }, []);
 
   const handleInputChange = (e) => {
-    setInp(e.target.value.toLowerCase());
-    filterBlogs(selectedTag, e.target.value.toLowerCase());
+    setInp(e.target.value.trim().toLowerCase());
+    filterBlogs(selectedTag, e.target.value.trim().toLowerCase());
   };
 
   const handleTagClick = (tag) => {

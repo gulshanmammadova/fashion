@@ -1,5 +1,20 @@
 let blogs=[
     {
+        
+        id:9,
+        title:'Win a fashion focused holiday',
+        author:'By William Rainbird',
+        date:'November 03, 2021',
+        mainImg:'https://label-theme-fashion.myshopify.com/cdn/shop/articles/210901_Bul_SS220475_1_1944x.jpg?v=1635919781',
+        mainDesc:['How much would you pay for your lover\'s favourite designer holiday outfits? Leave a comment to win the chance for you and a friend to enjoy this fabulous holiday together. ',
+    'Business Travel Editor Jo Jones leads an expert travel team offering expert tips on how to turn that holiday trip into a successful business travel in no time at all, whether you are going to Africa or relaxing on the beach in Costa Blanca.',
+    'Jo leads the way with an insightful selection of the best regional destinations and hotel picks, packed with expert advice, for your next regional break, whether you are looking for business-friendly deals and inspiration for business trips, a beach break with romance, or a fashion-friendly holiday. Her holiday recommendations also inspire readers to write captivating business travel stories on their own travels, which can also be used as promotional posts and blog posts for SmartTravel.',
+    'View more holiday ideas here.'],
+        tags:[ 'Sweaters',
+        'T-Shirts']
+    
+    }
+    ,{
         id:1,
         title:'You need to buy only one thing this spring',
         author:'Tony Stark',
@@ -27,6 +42,17 @@ let blogs=[
             }
 
         ]
+    },{
+        
+        id:10,
+        title:'Win a fashion focused holiday',
+        author:'By William Rainbird',
+        date:'November 03, 2021',
+        mainImg:'https://label-theme-fashion.myshopify.com/cdn/shop/articles/210901_Bul_SS221372_2_1944x.jpg?v=1635919693',
+        mainDesc:['How much would you pay for your lover\'s favourite designer holiday outfits? Leave a comment to win the chance for you and a friend to enjoy this fabulous holiday together. Business Travel Editor Jo Jones leads an expert travel team offering expert tips on how to turn that holiday trip into a successful business travel in no time at all, whether you are going to Africa or relaxing on the beach in Costa Blanca.Jo leads the way with an insightful selection of the best regional destinations and hotel picks, packed with expert advice, for your next regional break, whether you are looking for business-friendly deals and inspiration for business trips, a beach break with romance, or a fashion-friendly holiday. Her holiday recommendations also inspire readers to write captivating business travel stories on their own travels, which can also be used as promotional posts and blog posts for SmartTravel.'],
+        tags:[ 'Coats','Sweaters'
+        ]
+    
     },
     {
         id:2,
@@ -44,6 +70,18 @@ let blogs=[
         'Sweaters',
         'T-Shirts']
     },
+   
+    {
+        id:4,
+        title:'Therefore being fashionable costs a lot of money.',
+        author:'Luke Skywalker',
+        date:'May 09, 2018',
+        mainImg:'https://theme396-clothes.myshopify.com/cdn/shop/articles/08_96f61815-6a53-4d13-9039-474102e7829e.jpg?v=1525873350',
+        mainDesc:['Our product is universal because it suits different customers with different demands. We assure you it is really important, it shows that our good has such capacity as flexibility.So, with the great pleasure we are offering you our goods, and we are sure that only our choices of garments will suit you best. ','This social phenomenon is very whimsical, thus we as the consumers always try to stay in touch with all the latest fashion tendencies. So, our natural desire to wear fashionable clothes has many reasons such as historical, social and others. Therefore being fashionable costs a lot of money. But nowadays fashion is not such unavailable as it was a couple of centuries ago. We are lucky to have an opportunity to buy qualitative, fashionable and affordable clothes.','This social phenomenon is very whimsical, thus we as the consumers always try to stay in touch with all the latest fashion tendencies. Obviously there is nothing wrong about it because fashion satisfies our willingness to be attractive. '],
+        tags:['Fashionable',
+        'Casual'
+        ,'Accessories']
+    },
     {
         id:3,
         title:'Our goods was made up by best experts',
@@ -59,17 +97,6 @@ let blogs=[
         ,'Footwear',
         'Sweaters',
         'T-Shirts']
-    },
-    {
-        id:4,
-        title:'Therefore being fashionable costs a lot of money.',
-        author:'Luke Skywalker',
-        date:'May 09, 2018',
-        mainImg:'https://theme396-clothes.myshopify.com/cdn/shop/articles/08_96f61815-6a53-4d13-9039-474102e7829e.jpg?v=1525873350',
-        mainDesc:['Our product is universal because it suits different customers with different demands. We assure you it is really important, it shows that our good has such capacity as flexibility.So, with the great pleasure we are offering you our goods, and we are sure that only our choices of garments will suit you best. ','This social phenomenon is very whimsical, thus we as the consumers always try to stay in touch with all the latest fashion tendencies. So, our natural desire to wear fashionable clothes has many reasons such as historical, social and others. Therefore being fashionable costs a lot of money. But nowadays fashion is not such unavailable as it was a couple of centuries ago. We are lucky to have an opportunity to buy qualitative, fashionable and affordable clothes.','This social phenomenon is very whimsical, thus we as the consumers always try to stay in touch with all the latest fashion tendencies. Obviously there is nothing wrong about it because fashion satisfies our willingness to be attractive. '],
-        tags:['Fashionable',
-        'Casual'
-        ,'Accessories']
     },
     {
         id:5,
@@ -114,6 +141,23 @@ let blogs=[
         'Sweaters',
         'Coats']
     
+},
+{
+        
+    id:8,
+    title:'Win a fashion focused holiday',
+    author:'By William Rainbird',
+    date:'November 03, 2021',
+    mainImg:'https://label-theme-fashion.myshopify.com/cdn/shop/articles/210901_Bul_SS220417_2_1944x.jpg?v=1635919918',
+    mainDesc:['How much would you pay for your lover\'s favourite designer holiday outfits? Leave a comment to win the chance for you and a friend to enjoy this fabulous holiday together. ',
+'Business Travel Editor Jo Jones leads an expert travel team offering expert tips on how to turn that holiday trip into a successful business travel in no time at all, whether you are going to Africa or relaxing on the beach in Costa Blanca.',
+'Jo leads the way with an insightful selection of the best regional destinations and hotel picks, packed with expert advice, for your next regional break, whether you are looking for business-friendly deals and inspiration for business trips, a beach break with romance, or a fashion-friendly holiday. Her holiday recommendations also inspire readers to write captivating business travel stories on their own travels, which can also be used as promotional posts and blog posts for SmartTravel.',
+'View more holiday ideas here.'],
+    tags:['Accessories',
+    'Sweaters',
+    'Coats']
+
 }
+
 ]
 export default blogs;

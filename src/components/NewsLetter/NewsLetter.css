@@ -42,3 +42,43 @@ input{
     background-color: #F9FAFC;
     padding: 2rem 0;
 }
+.all-news form{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+@media only screen and (min-width: 300px) and (max-width: 770px) {
+    .second-div {
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+  .all-news{
+    flex-direction: column;
+  }
+  .all-news form button{
+    /* flex-direction: column; */
+    width: 30% !important;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 456px) {
+  
+    .all-news form button{
+   padding: 9px 11px !important;
+    }
+  }
+  @media only screen and (min-width: 300px) and (max-width: 400px) {
+  .all-news form{
+    flex-direction: column !important;
+
+  }
+  .all-news input{
+    display: block !important;
+  }
+    .all-news form button{
+  display: block !important;
+  width: 60% !important;
+  padding: 9px 11px !important;
+
+    }
+  }

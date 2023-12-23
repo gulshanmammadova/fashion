@@ -58,7 +58,25 @@ border: 1px solid #72bc98 !important;
     border-radius: 0px !important;
     height: 365px !important;
 }
+button.filter-btn{
+    border: none;
+    background-color: #72bc98;
+    color: white;
+    margin: 13px auto;
+    border-radius: 7px;
+ border: 1px solid white;
+    padding: 2px 40px;
+    transition: 0.5s;
+}
+button.filter-btn:hover{
+    background-color: white;
+    color: #72bc98;
+ border: 1px solid #72bc98;
 
+}
+.d-flex all-shop-f{
+    margin-top: 5px;
+}
     .card-img, .card-img-top {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;

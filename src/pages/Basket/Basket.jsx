@@ -70,7 +70,7 @@ const Basket = () => {
           </li>
         ))}
       </ul>
-      <p>Total: {calculateCartTotal()} $</p>
+      <p>Total: {calculateCartTotal().toFixed(2)} $</p>
       <button onClick={()=>addToMyCard()}>Shop Now</button>
       {/* {console.log(items)} */}
   <UpIcon/>
