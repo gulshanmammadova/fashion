@@ -80,3 +80,28 @@
 .all-register-page .line {
     display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+    .all-register-page  input {
+      font-size: 14px;
+    }
+    .register{
+        width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 990px) {
+    .all-register-page  input {
+      font-size: 16px;
+    }
+    .register{
+        width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 991px) and (max-width: 1440px) {
+    .all-register-page  input {
+      font-size: 18px;
+    }
+  }
+  

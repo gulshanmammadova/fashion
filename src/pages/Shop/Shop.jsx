@@ -51,7 +51,7 @@ const Shop = () => {
 const options = {
 	method: 'GET',
 	headers: {
-		// 'X-RapidAPI-Key': '2d7c039792msh52f5470b4237a6dp136b7bjsnddd9c48e087c',
+		'X-RapidAPI-Key': '2d7c039792msh52f5470b4237a6dp136b7bjsnddd9c48e087c',
 		'X-RapidAPI-Host': 'asos10.p.rapidapi.com'
 	}
 };

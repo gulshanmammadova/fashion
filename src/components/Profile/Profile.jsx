@@ -2,6 +2,7 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Table from 'react-bootstrap/Table';
 import undefinedImg from '../../images/notfound/images.jpg'
+import './Profile.css'
 const Profile = () => {
   let myBasket = [];
   let storedData = JSON.parse(localStorage.getItem('userData')) || [];
@@ -14,7 +15,7 @@ const Profile = () => {
   return (
     <div className='container my-4 mx-auto '>
       {myBasket.map((basket, basketNo) => (
-        <Accordion key={basketNo}>
+        <Accordion key={basketNo} className='accordion-all'>
           <Accordion.Item eventKey={basketNo.toString()}>
             <Accordion.Header>Order: {basketNo+1}</Accordion.Header>
        
@@ -42,7 +43,7 @@ const Profile = () => {
 
           <td>{basketItem.name}</td>
           <td>{basketItem.quantity}</td>
-          <td>{basketItem.price.current.value*basketItem.quantity}  $</td>
+          <td>{(basketItem.price.current.value*basketItem.quantity).toFixed(2)}  $</td>
         </tr>
          ))}
       </tbody>

@@ -4,3 +4,36 @@
     width: 19%;
     margin: 100px auto;
 }
+.all-register-page input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .all-register-page  input {
+      font-size: 14px;
+    }
+    .login{
+        width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 990px) {
+    .all-register-page  input {
+      font-size: 16px;
+    }
+    .login{
+        width: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 991px) and (max-width: 1440px) {
+    .all-register-page  input {
+      font-size: 18px;
+    }
+  }
+  

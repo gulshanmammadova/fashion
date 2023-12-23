@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 600px) {
+    table {
+      font-size: 12px;
+    }
+    .accordion-body{
+        overflow: scroll !important;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 990px) {
+    table {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 991px) and (max-width: 1440px) {
+    table {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 330px) and (max-width: 785px) {
+     .accordion-all{
+     overflow-x: scroll;
+    }
+    .accordion-body{
+        overflow: scroll !important;
+    }
+  }
