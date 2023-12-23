@@ -64,3 +64,28 @@ margin: 2rem 0;
 .about2{
     margin: 3rem 0;
 }
+@media screen and (min-width: 364px) and (max-width: 443px) {
+    .card-tel {
+    height: 471px !important;
+    }
+  }
+  @media screen and (min-width: 443px) and (max-width: 762px) {
+    .card {
+    height: 490px !important;
+    }
+  }
+  @media screen and (min-width: 3768px) and (max-width: 1199px) {
+    .card {
+        height: 307px !important;
+    
+        }
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 364px) {
+    .card{
+        height: 333px !important;
+    
+        }
+        
+  }
+  

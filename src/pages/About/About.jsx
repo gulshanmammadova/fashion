@@ -18,8 +18,8 @@ const About = () => {
     return (
       <div className="row">
         {firstThreeBlogs.map((post, index) => (
-          <div key={index} className="col-lg-4 mb-4">
-            <Card className=' blog-card-about' style={{height:'371px !important'}}>
+          <div key={index} className="col-lg-4 mb-4 col-md-4 col-sm-12 ">
+            <Card className=' blog-card-about card-tel' style={{height:'371px !important'}}>
               <Card.Img className='about-card-top-img' style={{margin:'0 !important',width:'100% !important'}} variant="top" src={post.mainImg} alt={post.title} />
               <Card.Body className='card-body'>
                 <Card.Title>{post.title}</Card.Title>
