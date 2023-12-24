@@ -68,24 +68,80 @@ margin: 2rem 0;
     .card-tel {
     height: 471px !important;
     }
+    .mini-blog .card {
+        height: 465px !important;
+      }
   }
   @media screen and (min-width: 443px) and (max-width: 762px) {
     .card {
     height: 490px !important;
     }
+    .mini-blog .card {
+        height: 465px !important;
+      }
   }
-  @media screen and (min-width: 3768px) and (max-width: 1199px) {
+  @media screen and (min-width: 763px) and (max-width: 998px) {
     .card {
         height: 307px !important;
     
         }
+        .mini-blog .card{
+            height: 351px !important;
+          }
   }
   
-  @media screen and (min-width: 300px) and (max-width: 364px) {
+  @media screen and (min-width: 300px) and (max-width: 530px) {
     .card{
         height: 333px !important;
     
         }
+        .mini-blog .card {
+            height: 465px !important;
+          }
         
   }
+  @media screen and (max-width: 443px) {
+    .card-tel {
+      height: 471px !important;
+    }
   
+    .mini-blog .card {
+        height: 465px !important;
+      }
+  }
+  
+  @media screen and (min-width: 444px) and (max-width: 762px) {
+    .card {
+      height: 490px !important;
+    }
+  
+   
+  }
+  
+  @media screen and (min-width: 763px) and (max-width: 998px) {
+    .card {
+      height: 307px !important;
+    }
+  
+    .mini-blog .card {
+        height: 465px !important;
+      }
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 363px) {
+    .card {
+      height: 333px !important;
+    }
+  
+    .mini-blog .card {
+        height: 465px !important;
+      }
+  }
+   
+  @media screen and (min-width: 300px) and (max-width: 700px) {
+
+  
+    .mini-blog .card {
+      height: 465px !important;
+    }
+  }

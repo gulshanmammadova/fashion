@@ -22,7 +22,7 @@ input.count
     padding: 10px;
     margin: 3px 13px 7px 0px;
 }.shop-page-info{
-  margin-top: 91px !important;
+  /* margin-top: 91px !important; */
   background-image:url("https://sebrae.com.br/Sebrae/Portal%20Sebrae/Conte%C3%BAdos/Moda/Imagens%20Moda/Retomada%20Segura%20das%20Atividades_%20Setor%20de%20Moda.png");
   background-position: center;
   text-align: center;
@@ -247,8 +247,14 @@ height: 31rem;
   margin: 2rem 0 1rem -2rem;
 
 }
+/* @media (min-width: 577px) and (max-width: 990px){
+  .quick-view h2{
+  font-size: 28px !important;
 
-@media (max-width: 576px) {
+  }
+} */
+
+@media (max-width: 999px) {
   .shop-bread-crump{
     width: 33%;
   }
@@ -259,7 +265,7 @@ height: 31rem;
   width: 100%;
 }
 .quick-view-info h2{
-  font-size: 41px;
+  font-size: 28px !important;
 
 }
 .clearfix h2{

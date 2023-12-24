@@ -81,6 +81,7 @@ width: 96px;
   line-height: 40px;
   margin-right: 1rem;
   font-size: 18px;
+  height: 86px;
 }
 
 .nav-item:after {
@@ -177,17 +178,19 @@ color: #72bc98;
   }
   
 .count-cart{
-  width: 5%;
-  top: 61px;
+  width: 3%;
+  top: 66px;
   font-size: 10px;
   padding: 2px 7px;
   position: absolute;
-  left: 54%;
+  left: 52%;
 }
   .nav-menu.active {
     background: #fff;
     left: 0px;
     top: 120px;
+    margin-left: -10px;
+    margin-top: -36px;
     width: 104%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -204,9 +207,10 @@ color: #72bc98;
     border: none;
   }
   .nav-links {
-    padding: 1.5rem;
+    padding: 10px;
     width: 100%;
     display: table;
+    margin: -1px auto -3px 0;
   }
 
   .nav-logo .icon {

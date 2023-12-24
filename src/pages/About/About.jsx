@@ -7,7 +7,7 @@ import img1 from '../../images/about/about1.png'
 import img2 from '../../images/about/about2.png'
 import Card from 'react-bootstrap/Card';
 import {Link} from 'react-router-dom'
-
+import '../Blog/Blog.css'
 import './About.css'
 import NewsLetter from '../../components/NewsLetter/NewsLetter';
 import blog from '../../data/blog'
@@ -17,18 +17,16 @@ const About = () => {
     const firstThreeBlogs = blog.slice(0, 3);
     return (
       <div className="row">
-        {firstThreeBlogs.map((post, index) => (
+        {firstThreeBlogs.map((blog, index) => (
           <div key={index} className="col-lg-4 mb-4 col-md-4 col-sm-12 ">
-            <Card className=' blog-card-about card-tel' style={{height:'371px !important'}}>
-              <Card.Img className='about-card-top-img' style={{margin:'0 !important',width:'100% !important'}} variant="top" src={post.mainImg} alt={post.title} />
-              <Card.Body className='card-body'>
-                <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{post.date}</Card.Text>
-                <Link to={`/singleblog/${post.id}`} className="blog-link">
-                  Read More
-                </Link>
-              </Card.Body>
-            </Card>
+             <Card className='mx-2 my-2 b-0 card-1'  key={index}>
+                <Card.Img className='b-0' variant="top" src={blog.mainImg} />
+                <Card.Body>
+                  <Card.Title className='blog-card-title'>{blog.date} | {blog.author}</Card.Title>
+                  <Card.Text>{blog.title}</Card.Text>
+                  <Link className='detail-blog' to={`/singleblog/${blog.id}`}> Read More ...</Link>
+                </Card.Body>
+              </Card>
           </div>
         ))}
       </div>

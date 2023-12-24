@@ -105,3 +105,74 @@ button.filter-btn:hover{
         margin: 10px auto;
 
     }
+    
+@media screen and (max-width: 600px) {
+   .card-and-filter{
+    display: block !important;
+   }
+   .card-all-on-mobile{
+    justify-content: center !important;
+   }
+    .all-shop-f{
+        /* flex-direction: row !important; */
+        display: block !important;
+    }
+    .justify-content-center{
+        justify-content: center !important;
+    }
+    .accordion-header button{
+       margin: 8px !important;
+       width: 95% !important;
+    }
+    /* .index-p {
+        width: 1% !important;
+    } */
+    .all-shop-f .filter-btn{
+        width: 100%;
+    }
+    .all-shop-f button{
+        padding: 0 !important;
+       }
+       
+       /* .card- div{
+        display: block !important;
+       } */
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 990px) {
+    .all-shop-f{
+        /* flex-direction: row !important; */
+        display: block !important;
+    }
+    h2.accordion-header{
+        padding: 4px 3px;
+
+    }
+    
+    .justify-content-center{
+        justify-content: center !important;
+    }
+    .all-shop-f .filter-btn{
+        width: 100%;
+    }
+    .all-shop-f button{
+        padding: 0 !important;
+       }
+       /* .card- div{
+        display: block !important;
+       } */
+  }
+  
+  @media screen and (min-width: 991px)  {
+   .all-shop-f{
+    display: flex;
+   }
+       /* .card- div{
+        display: flex !important;
+       } */
+  
+   .all-shop-f .filter-btn{
+    width: 100%;
+}
+  }
+  

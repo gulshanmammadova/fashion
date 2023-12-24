@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 import { TiHeartOutline } from "react-icons/ti";
 import { SlBasket } from "react-icons/sl";
 import { BsInfoLg } from "react-icons/bs";
-import './Shop.css';
 import Accordion from 'react-bootstrap/Accordion';
 import { CartProvider, useCart } from "react-use-cart";
 import { WishlistProvider, useWishlist } from "react-use-wishlist";
 import MoonLoader from "react-spinners/MoonLoader";
 import UpIcon from '../../components/Up/UpIcon';
 import Pagination from 'react-bootstrap/Pagination';
+import './Shop.css';
 const override = {
   display: "block",
   margin: "0 auto",
@@ -116,7 +116,7 @@ try {
   }
 
   return (
-    <div className='mx-auto container d-flex all-shop-f'>
+    <div className='mx-auto container  all-shop-f'>
    <div className='filter-accordion column'> 
    <h3 style={{textAlign:'center'}}>Filter</h3>
    <Accordion defaultActiveKey="0">
@@ -160,8 +160,8 @@ try {
    </div>
       <div className='card-and-filter col-lg-10'>
     
-        <div className='d-flex col-lg-12 my-4' style={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
-          <div className='d-flex col-lg-12 my-4' style={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
+        <div className=' col-lg-12 my-4' style={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
+          <div className='d-flex col-lg-12 my-4 card-all-on-mobile justify-content-center' style={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
             {loading ? (
               <MoonLoader
                 color='#89BC98'
@@ -196,7 +196,7 @@ try {
               ))
             )}
           </div>
-             <div className='m-10-auto'>
+             <div className='m-10-auto index-p  col-12  mx-auto w-25 '>
         {Array.from({ length: Math.ceil(prod.length / itemsPerPage) }, (_, index) => (
           <button
             className={selectedPage === index + 1 ? 'pageIndex selected-page' : 'pageIndex'}
