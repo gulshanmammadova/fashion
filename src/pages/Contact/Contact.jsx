@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import NewsLetter from '../../components/NewsLetter/NewsLetter';
 import UpIcon from '../../components/Up/UpIcon.jsx';
-
 const Contact = () => {
   return (
     <div className=''>
