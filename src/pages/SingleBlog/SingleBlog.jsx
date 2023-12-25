@@ -83,31 +83,31 @@ const SingleBlog = () => {
                     </React.Fragment>
                   ))}
               </div>
-            <div class="comment">
+            <div className="comment">
                     <h2>LIVE A REPLY</h2>
-                    <p class="my-3">Your email address will not be published.Required fields are marked *</p>
-                    <div class="comment-form-group">
+                    <p className="my-3">Your email address will not be published.Required fields are marked *</p>
+                    <div className="comment-form-group">
                         <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Name*</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"/>
+                            <div className="form-group">
+                                <label htmlFor="exampleFormControlInput1">Name*</label>
+                                <input type="text" className="form-control" id="exampleFormControlInput1"/>
                             </div>
 
-                            <div class="form-group">
-                                <label for="exampleFormControlInput2">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput2"/>
+                            <div className="form-group">
+                                <label htmlFor="exampleFormControlInput2">Email address</label>
+                                <input type="email" className="form-control" id="exampleFormControlInput2"/>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput3">Website</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput3"/>
+                            <div className="form-group">
+                                <label htmlFor="exampleFormControlInput3">Website</label>
+                                <input type="text" className="form-control" id="exampleFormControlInput3"/>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Comment*</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div className="form-group">
+                                <label htmlFor="exampleFormControlTextarea1">Comment*</label>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
-                                <label class="form-check-label" for="defaultCheck1">
+                            <div className="form-check ">
+                                <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                                <label className="form-check-label" htmlFor="defaultCheck1">
                                     Save my name, email, and website in this browser for the next time I comment.
                                 </label>
                             </div>

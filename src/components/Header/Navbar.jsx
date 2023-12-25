@@ -125,9 +125,9 @@ function NavBar() {
               {activeUserData ? (
                 <ul className="list-account">
                   <li>
-                    <Link to="/myaccount">Profile</Link>
+                    <Link to="/myaccount" className="a">Profile</Link>
                   </li>
-                  <li
+                  <li  className="a"
                     onClick={handleLogout}
                     onMouseEnter={() => setShowLoginRegister(false)}
                     onMouseLeave={() => setShowLoginRegister(true)}
@@ -138,10 +138,10 @@ function NavBar() {
               ) : (
                 <ul className="list-account">
                   <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login"  className="a">Login</Link>
                   </li>
                   <li>
-                    <Link to="/register">Register</Link>
+                    <Link to="/register"  className="a">Register</Link>
                   </li>
                 </ul>
               )}

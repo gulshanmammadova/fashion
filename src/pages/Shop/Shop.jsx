@@ -51,7 +51,7 @@ const Shop = () => {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '2d7c039792msh52f5470b4237a6dp136b7bjsnddd9c48e087c',
+		'X-RapidAPI-Key': 'd1849ccb9dmshfec06b2d32c7552p1b56f2jsnc7f606f8368a',
 		'X-RapidAPI-Host': 'asos10.p.rapidapi.com'
 	}
 };
@@ -63,11 +63,6 @@ try {
   setOriginalProd(result.data.products)
   // console.log(result.data)
   setLoading(false);
-  // console.log(originalProd)
-
-  // console.log(result.data.products.brandName)
-  // const uniqueBrandNames = [...new Set(result.data.products.map((product) => product.brandName))];
-  // setBrandNames(uniqueBrandNames);
 } catch (error) {
   console.error(error);
 }
@@ -196,7 +191,7 @@ try {
               ))
             )}
           </div>
-             <div className='m-10-auto index-p  col-12  mx-auto w-25 '>
+             <div className='m-10-auto index-p  col-12  mx-auto w-28 '>
         {Array.from({ length: Math.ceil(prod.length / itemsPerPage) }, (_, index) => (
           <button
             className={selectedPage === index + 1 ? 'pageIndex selected-page' : 'pageIndex'}

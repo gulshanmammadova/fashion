@@ -6,6 +6,9 @@
     position: relative;
     height: 236px;
 }
+.w-28{
+    width: 36% !important;
+}
 .card-1:hover .card-icons{
 bottom: 200px;
 opacity: 1;

@@ -81,9 +81,12 @@ width: 96px;
   line-height: 40px;
   margin-right: 1rem;
   font-size: 18px;
-  height: 86px;
-}
 
+}
+ ul.list-account li{
+  color: #1f5156 !important;
+  background-color: white !important;
+}
 .nav-item:after {
   content: "";
   display: block;
@@ -165,6 +168,12 @@ color: #72bc98;
 }
 
 @media screen and (max-width: 960px) {
+  .nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+    font-size: 18px;
+    height: 86px;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
