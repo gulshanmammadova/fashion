@@ -31,7 +31,7 @@ const ProductDetail = () => {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '0faf00add0mshd806d32511501edp133b61jsncc44bd5bcc47',
+          'X-RapidAPI-Key':  '0faf00add0mshd806d32511501edp133b61jsncc44bd5bcc47',
           'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
         }
       };
@@ -83,24 +83,24 @@ const ProductDetail = () => {
 
   return (
     <div className='shop-page'>
-      <div class="shop-all">
-        <div class="shop-page-info ">
-          <div class="shop-bread-crump  mx-auto">
+      <div className="shop-all">
+        <div className="shop-page-info ">
+          <div className="shop-bread-crump  mx-auto">
           </div>
-          <h1 class="fw-bold text text-light">SHOP</h1>
+          <h1 className="fw-bold text text-light">SHOP</h1>
         </div>
       </div>
 
-      <div class="quick-view container">
-        <div class="quick-view-img">
-          <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+      <div className="quick-view container">
+        <div className="quick-view-img">
+          <div id="custCarousel" className="carousel slide" data-ride="carousel" align="center">
             <ImageGallery items={imgs} />
           </div>
         </div>
-        <div class="quick-view-info">
+        <div className="quick-view-info">
           <h2>{thisProd.name}</h2>
           <del>{thisProd.price.previous.value !== thisProd.price.current.value ? thisProd.price.previous.text : null}</del>
-          <span class="discounted-price mx-2">
+          <span className="discounted-price mx-2">
             <span>{thisProd.price.current.text}</span>
           </span>
           <div className=' info' >
@@ -123,7 +123,7 @@ const ProductDetail = () => {
           </button>
         
           <p>Aviability:{thisProd.isInStock ? 'In Stock' : 'Out Of Stock'}</p>
-      {console.log(thisProd)}
+      {/* {console.log(thisProd)} */}
         </div>
       </div>
   <UpIcon/>
